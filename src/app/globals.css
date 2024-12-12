@@ -3,19 +3,73 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0c0c1d;
+    --primary: #0f0f80;
+    --seconday: #5920a7;
+    --tertiary: #fe15ce;
+    --neutral: #42526d;
+    --neutral_variant: #c2c7d0;
   }
 }
 
+.border_color {
+  border-color: #8c9199;
+}
+.bg_join {
+  background-color: #98a1c0;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("/src/app/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/src/app/fonts/Roboto-Regular.ttf");
+}
+/* 
+#BFC1FF12
+border: 3px solid var(--Schemes-Primary, #BFC1FF)
+#050518
+
+buttonSt:#BFC1FFB2
+buttonEnd:#F9B1DC12
+
+
+#ADBCFF3D 24%
+#FFFFFF12 7%
+#98A1C0
+
+homeColor:#E1E2E9;
+homesubfont:"#C2C7CF"
+*/
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--neutral_variant);
+}
+
+.input {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  outline: none;
+  border: none;
+  /* background: inherit; */
+}
+
+.input2 {
+  width: 100%;
+  position: relative;
+  /* text-align: center; */
+  outline: none;
+  border: none;
+  /* background: inherit; */
+}
+.aside {
+  background: radial-gradient(ellipse at top left, rgb(54, 50, 80), #0c0c1d);
+  opacity: 0.5;
 }
