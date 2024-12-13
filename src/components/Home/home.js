@@ -22,9 +22,9 @@ const HomePage = () => {
       <div className="w-full relative z-20 flex mt-9 justify-center max-w-7xl 2xl:max-w-6xl">
         <div className="w-full lg:w-10/12  2xl:w-full py-12 flex flex-row ">
           <div className="w-full  flex justify-center flex-col items-center gap-4">
-            <div className="w-10/12 lg:w-11/12  2xl:w-full  font-bold text-3xl lg:text-4.5xl 2xl:text-5.5xl leading-none text-homeColor font-roboto ">
+            <div className="w-10/12 lg:w-11/12  2xl:w-full  font-bold text-3xl lg:text-4.5xl 2xl:text-5.5xl leading-8 lg:leading-none text-homeColor font-roboto ">
               Trading Doesn’t Have to be Hard - We
-              <br className="block" /> Make it Seamless
+              <br className="block lg:hidden lg.5:block" /> Make it Seamless
             </div>
             <div className="w-10/12 lg:w-11/12 2xl:w-full text-base text-homesubfont font-opensans">
               Get in early on promising assets with Airdrop points trading and

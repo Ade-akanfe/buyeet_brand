@@ -26,6 +26,7 @@ module.exports = {
       },
       screens: {
         "2xl": "1440px",
+        "lg.5": "1175",
       },
       fontSize: {
         "22x": "22px",
@@ -73,8 +74,8 @@ module.exports = {
         100: "420px",
       },
       fontFamily: {
-        roboto:["Roboto", 'sans-serif'],
-        opensans:["OpenSans", 'sans-serif']
+        roboto: ["Roboto", "sans-serif"],
+        opensans: ["OpenSans", "sans-serif"],
       },
     },
   },
