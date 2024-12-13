@@ -12,7 +12,7 @@ const Testimonial = () => {
               Testimonial
             </span>
             <span className="text-xs lg:text-sm 2xl:text-base text-neutral_variant inline-block">
-              Don't just take our word for it - see what actual users of our
+              Don&#39;t just take our word for it - see what actual users of our
               service have to say about their experience.
             </span>
           </div>
