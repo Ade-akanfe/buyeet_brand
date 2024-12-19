@@ -1,3 +1,5 @@
+"use client";
+
 import HomeButton from "../reusables/home_button";
 import IconContainer from "../reusables/icon_container";
 import JoinWaitList from "../reusables/join";
@@ -12,12 +14,72 @@ import Airdrop7 from "@/assets/airdrops-7.png";
 import Airdrop8 from "@/assets/airdrops-8.png";
 import Airdrop9 from "@/assets/airdrops-9.png";
 import Airdrop10 from "@/assets/airdrops.png";
+import { useEffect, useState } from "react";
 
 const HomePage = () => {
+  const array1 = [
+    { caption: "Cex.io", icon: Airdrop3 },
+    { icon: Airdrop10, caption: "Notpixel" },
+    { caption: "Blum", icon: Airdrop8 },
+    { icon: Airdrop2, caption: "Paws" },
+    { icon: Airdrop1, caption: "Tapswap" },
+    { icon: Airdrop4, caption: "Major" },
+    { icon: Airdrop6, caption: "Gomble" },
+    { icon: Airdrop9, caption: "Musk Empire" },
+    { icon: Airdrop7, caption: "Sidekick" },
+    { icon: Airdrop5, caption: "W-coin" },
+    { icon: Airdrop2, caption: "Paws" },
+    { icon: Airdrop10, caption: "Notpixel" },
+    { icon: Airdrop4, caption: "Major" },
+    { icon: Airdrop3, caption: "Cex.io" },
+    { icon: Airdrop8, caption: "Blum" },
+    { icon: Airdrop1, caption: "Tapswap" },
+    { icon: Airdrop7, caption: "Sidekick" },
+    { icon: Airdrop9, caption: "Musk Empire" },
+    { icon: Airdrop10, caption: "Notpixel" },
+  ];
+  const array2 = [
+    { icon: Airdrop4, caption: "Major" },
+    { icon: Airdrop8, caption: "Blum" },
+    { icon: Airdrop1, caption: "Tapswap" },
+    { icon: Airdrop7, caption: "Sidekick" },
+    { icon: Airdrop9, caption: "Musk Empire" },
+    { icon: Airdrop10, caption: "Notpixel" },
+    { caption: "Blum", icon: Airdrop8 },
+    { caption: "Cex.io", icon: Airdrop3 },
+    { icon: Airdrop10, caption: "Notpixel" },
+    { icon: Airdrop2, caption: "Paws" },
+    { icon: Airdrop1, caption: "Tapswap" },
+    { icon: Airdrop4, caption: "Major" },
+    { icon: Airdrop6, caption: "Gomble" },
+    { icon: Airdrop9, caption: "Musk Empire" },
+    { icon: Airdrop7, caption: "Sidekick" },
+    { icon: Airdrop5, caption: "W-coin" },
+    { icon: Airdrop2, caption: "Paws" },
+    { icon: Airdrop10, caption: "Notpixel" },
+    { icon: Airdrop3, caption: "Cex.io" },
+  ];
+
+  let [index, setIndex] = useState(0);
+  let [arrayResult, setArrayRes] = useState(array1);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (index === arrayResult.length - 1) {
+        setIndex(-1);
+      }
+
+      const current = array1[index];
+      array1[index] = array2[index];
+      array2[index] = current;
+      setIndex((prev) => prev + 1);
+      setArrayRes(array1);
+    }, 5000);
+    return () => clearInterval(interval);
+  });
+
   return (
     <div className="w-full h-full relative overflow-hidden flex items-center flex-col ">
-      <div className="absolute top-0 z-20 h-1/2 w-full bg-gradient-radial-t from-tertiary from-15% via-background to-background to-65% "></div>
-      <div className="absolute top-0 z-20 h-1/2 w-full bg-background opacity-70"></div>
       <Header />
       <div className="w-full relative z-20 flex mt-9 justify-center max-w-7xl 2xl:max-w-6xl">
         <div className="w-full lg:w-10/12  2xl:w-full py-12 flex flex-row ">
@@ -66,29 +128,13 @@ const HomePage = () => {
       </div>
       <div className="w-full flex lg:w-10/12 2xl:w-full relative z-20  2xl:max-w-7xl min-w-80 justify-center items-center px-4 py-8 gap-4 flex-wrap">
         <div className="w-full  lg:w-full 2xl:w-full  flex justify-center items-center px-4 lg:px-0 py-8 gap-4 flex-wrap">
-          <HomeButton icon={Airdrop8}>Blum</HomeButton>
-          <HomeButton icon={Airdrop3}>Cex.io</HomeButton>
-          <HomeButton icon={Airdrop10}>Notpixel</HomeButton>
-          <HomeButton icon={Airdrop2}>Paws</HomeButton>
-          <HomeButton icon={Airdrop1}>Tapswap</HomeButton>
-          <HomeButton icon={Airdrop4}>Major</HomeButton>
-          <HomeButton icon={Airdrop6}>Gomble</HomeButton>
-          <HomeButton icon={Airdrop9}>Musk Empire</HomeButton>
-          <HomeButton icon={Airdrop7}>Sidekick</HomeButton>
-          <HomeButton icon={Airdrop5}>W-coin</HomeButton>
-          <HomeButton icon={Airdrop2}>Paws</HomeButton>
-          <HomeButton icon={Airdrop10}>Notpixel</HomeButton>
-          <HomeButton icon={Airdrop4}>Major</HomeButton>
-          <HomeButton icon={Airdrop3}>Cex.io</HomeButton>
-          <HomeButton icon={Airdrop8}>Blum</HomeButton>
-          <HomeButton icon={Airdrop1}>Tapswap</HomeButton>
-          <HomeButton icon={Airdrop7}>Sidekick</HomeButton>
-          <HomeButton icon={Airdrop9}>Musk Empire</HomeButton>
-          <HomeButton icon={Airdrop10}>Notpixel</HomeButton>
+          {arrayResult.map((el, index) => (
+            <HomeButton icon={el.icon} key={index}>
+              {el.caption}
+            </HomeButton>
+          ))}
         </div>
       </div>
-      {/* <div className="absolute bottom-0 z-0 h-1/2 w-full bg-gradient-radial-b from-neutral_variant from-15% via-background to-background to-30% "></div>
-      <div className="absolute bottom-0 z-10 h-full w-full bg-background opacity-60"></div> */}
     </div>
   );
 };

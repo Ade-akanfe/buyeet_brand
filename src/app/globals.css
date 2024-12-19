@@ -73,3 +73,56 @@ body {
   background: radial-gradient(ellipse at top left, rgb(54, 50, 80), #0c0c1d);
   opacity: 0.5;
 }
+
+.gradient-background {
+  /* background: linear-gradient(
+    220deg,
+    #0e0e17 0%,
+    #050329 30%,
+    #53063c 2%,
+    #2c0c3b 40%,
+    #04062b 60%,
+    #1a0240 80%,
+    #131318 100%
+  ); */
+  background: radial-gradient(
+      circle at 0% 20%,
+      #1a0240 0%,
+      #1a0240 8%,
+      transparent 11%
+    ),
+    radial-gradient(
+      circle at top center,
+      #53063c 0%,
+      #53063c 2%,
+      transparent 11%
+    ),
+    radial-gradient(circle at 100% 30%, #1a0240 0%, #1a0240 8%, transparent 11%),
+    radial-gradient(circle at 50% 50%, #1a0240 0%, #1a0240 8%, transparent 11%),
+    radial-gradient(circle at 90% 70%, #2c0c3b 0%, #2c0c3b 8%, transparent 11%),
+    /* linear-gradient(
+      220deg,
+      #0e0e17 0%,
+      #050329 30%,
+      #2c0c3b 40%,
+      #04062b 60%,
+      #1a0240 80%,
+      #131318 100%1a0240 
+    ); */
+  linear-gradient(90deg, #0e0e17 16%, #04062b 30%, #1a0240 50%, #131318 100%);
+}
+
+.gradient-background2 {
+  background: radial-gradient(
+      circle at top left,
+      #1a0240 0%,
+      #1a0240 16%,
+      transparent 11%
+    ),
+    radial-gradient(circle at left, #1a0240 0%, #1a0240 16%, transparent 11%),
+    linear-gradient(90deg, #0e0e17 20%, #04062b 60%, #1a0240 80%, #131318 100%);
+}
+
+.forced{
+  color: red !important;
+}

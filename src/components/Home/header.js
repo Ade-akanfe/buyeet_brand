@@ -11,6 +11,11 @@ import { MdOutlineCancel } from "react-icons/md";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+
+  const clicked = () => {
+    setOpen((prev) => !prev);
+  };
+
   return (
     <>
       <div className="bg-searchBack relative z-20 flex w-full h-auto py-2 lg:py-5 justify-center border-solid border-b-2 border_color">
@@ -23,7 +28,7 @@ const Header = () => {
                 priority
                 // height={50}
                 // width={50}
-                layout="fill"
+                // layout="fill"
               />
             </div>
           </div>
@@ -47,13 +52,13 @@ const Header = () => {
               </span>
             </span>
             <span className="inline-block">
-              <Link href={"#"} className="text-sm font-medium">
+              <Link href={"#learn"} className="text-sm font-medium">
                 Learn
               </Link>
             </span>
             <span className=" inline-block">
               {" "}
-              <Link href={"#"} className="text-sm font-medium">
+              <Link href={"#about"} className="text-sm font-medium">
                 About Us
               </Link>
             </span>
@@ -95,13 +100,13 @@ const Header = () => {
           </div>
           <div className="flex flex-col h-3/6 justify-center items-center gap-5">
             <span className="inline-block">
-              <Link href={"#"} className="text-sm font-medium">
+              <Link href={"#learn"} className="text-sm font-medium" onClick={clicked}>
                 Learn
               </Link>
             </span>
             <span className=" inline-block">
               {" "}
-              <Link href={"#"} className="text-sm font-medium">
+              <Link href={"#about"} className="text-sm font-medium" onClick={clicked}>
                 About Us
               </Link>
             </span>

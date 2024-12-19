@@ -1,8 +1,14 @@
 import Image from "next/image";
 import BuyeetLogo from "@/assets/buyeet_logo.png";
 import Twitter from "@/assets/Frame.png";
-import Discord from "@/assets/svg-1.png";
-import GitHub from "@/assets/svg.png";
+import Link from "next/link";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTelegramPlane,
+  FaTiktok,
+  FaYoutube,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -15,13 +21,34 @@ const Footer = () => {
           <div className="flex gap-5 flex-col ">
             <div className="flex gap-4">
               <span className="w-8 relative h-8 ">
-                <Image src={Discord} alt={"social media tag"} />
+                <Link href={"https://t.me/buyeetcom"} target="_blank" > 
+                  <FaTelegramPlane size={30} />
+                </Link>
               </span>
               <span className="w-8 relative h-8 ">
-                <Image src={Twitter} alt={"social media tag"} />
+                <Link href={"https://twitter.com/buyeetcom"} passHref target="_blank">
+                  <Image src={Twitter} alt={"social media tag"} />
+                </Link>
               </span>
               <span className="w-8 relative h-8 ">
-                <Image src={GitHub} alt={"social media tag"} />
+                <Link href={"https://YouTube.com/@buyeetcom"} target="_blank">
+                  <FaYoutube size={30} />
+                </Link>
+              </span>
+              <span className="w-8 relative h-8  "  target="_blank">
+                <Link href={"https://TikTok.com/@buyeetcom"}>
+                  <FaTiktok size={30} />
+                </Link>
+              </span>
+              <span className="w-8 relative h-8 " target="_blank">
+                <Link href={"https://facebook.com/buyeetcom"}>
+                  <FaFacebook size={30} />
+                </Link>
+              </span>
+              <span className="w-8 relative h-8 " target="_blank">
+                <Link  href={"https://instagram.com/buyeetcom"}>
+                  <FaInstagram size={30} />
+                </Link>
               </span>
             </div>
             <span className="text-sm">© 2024 buyeet</span>

@@ -10,8 +10,6 @@ const About = () => {
 
   return (
     <div className="w-full relative z-40 flex justify-center items-center">
-      <div className="absolute -top-10 lg:top-5 z-10 h-1/2 w-full bg-gradient-radial-r from-neutral_variant from-10% via-background to-background to-30% "></div>
-      <div className="absolute -top-10 lg:top-5 z-10 h-1/2  w-full bg-background opacity-90"></div>
       <div className="w-11/12 max-w-5xl flex z-30 flex-col gap-5">
         <span className="inline-block text-3xl lg:text-4.5xl 2xl:text-5.5xl font-bold font-roboto" >
           One Platform, Multi Assets
