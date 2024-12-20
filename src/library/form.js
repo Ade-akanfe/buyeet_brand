@@ -68,6 +68,7 @@ export async function getUsers() {
     await connectDB();
 
     const users = await userModel.find();
+    console.log(users);
     return {
       success: true,
       users,
