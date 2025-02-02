@@ -1,6 +1,6 @@
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import TestimonialCard from "../reusables/testimonial-card";
-import ImageMe from "@/assets/image.jpeg";
+import ImageMe from "@/assets/download.jpeg";
 
 const Testimonial = () => {
   return (
@@ -27,7 +27,7 @@ const Testimonial = () => {
         </div>
         <div className="w-full flex flex-col lg:flex-row gap-6 lg:gap-0 justify-between"></div>
       </div>
-      <div className="w-11/12 flex flex-col md:flex-row lg:flex-row gap-6 lg:gap-4 justify-between max-w-5xl">
+      <div className="w-11/12 flex flex-col md:flex-row lg:flex-row gap-6 sm-landscape:flex-row sm-landscape:flex-wrap sm-landscape:gap-4 lg:gap-4 justify-between max-w-5xl sm-landscape:justify-center">
         <TestimonialCard
           role={"Crypto Enthusiast"}
           name={"Jane Smith"}
@@ -38,13 +38,13 @@ const Testimonial = () => {
           role={"Crypto Enthusiast"}
           name={"Jane Smith"}
           icon={ImageMe}
-          caption={`"I've been using Buyeet for months now and I'm amazed at how easy it is to claim airdrops. The platform's user-friendly interface and timely notifications make it a breeze. I've already claimed several valuable airdrops, and I'm excited to see what's next!"`}
+          caption={`"As a busy professional, I don't have a lot of time to keep up with the latest airdrop news. Buyeet has been a lifesaver! It automatically alerts me to new airdrop opportunities, saving me time and effort. I highly recommend it to anyone looking to maximize their crypto earnings."`}
         />
         <TestimonialCard
           role={"Crypto Enthusiast"}
           name={"Jane Smith"}
           icon={ImageMe}
-          caption={`"I've been using Buyeet for months now and I'm amazed at how easy it is to claim airdrops. The platform's user-friendly interface and timely notifications make it a breeze. I've already claimed several valuable airdrops, and I'm excited to see what's next!"`}
+          caption={`"I was skeptical at first, but Buyeet has proven to be a legit platform for claiming airdrops. The team is responsive and helpful, and the platform's security measures are top-notch. I've already claimed a few valuable airdrops, and I'm looking forward to many more!"`}
         />
       </div>
     </div>

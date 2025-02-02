@@ -27,6 +27,9 @@ module.exports = {
       screens: {
         "2xl": "1440px",
         "lg.5": "1175",
+        "sm-landscape": {
+          raw: `(max-width:700px) and (orientation:landscape)`,
+        },
       },
       fontSize: {
         "22x": "22px",

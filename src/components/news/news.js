@@ -25,7 +25,7 @@ const News = () => {
             </span>
           </span>
         </div>
-        <div className="w-full flex flex-col md:flex-row lg:flex-row gap-6 lg:gap-0 justify-between">
+        <div className="w-full flex flex-col sm-landscape:flex-row md:flex-row lg:flex-row gap-6 sm-landscape:gap-1 lg:gap-0 justify-between">
           <NewsCard
             caption={`Web3 Wallet Community AMA: 
                     Join Us for an Exclusive 

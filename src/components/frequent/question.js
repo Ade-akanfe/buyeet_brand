@@ -13,19 +13,27 @@ const Questions = () => {
         </div>
         <div className="flex flex-col gap-7">
           <QuestCard
-            question={"What is an airdrop?"}
+            question={"What is Buyeet"}
             answer={`"I was skeptical at first, but Buyeet has proven to be a legit platform for claiming airdrops. The team is responsive and helpful, and the platform's security measures are top-notch. I've already claimed a few valuable airdrops, and I'm looking forward to many more!"`}
           />
           <QuestCard
-            question={"How does your Buyeet work?"}
+            question={"What does the platform offer now?"}
             answer={`"I was skeptical at first, but Buyeet has proven to be a legit platform for claiming airdrops. The team is responsive and helpful, and the platform's security measures are top-notch. I've already claimed a few valuable airdrops, and I'm looking forward to many more!"`}
           />
           <QuestCard
-            question={"Is it safe to use your platform?"}
+            question={"What features are coming soon?"}
             answer={`"I was skeptical at first, but Buyeet has proven to be a legit platform for claiming airdrops. The team is responsive and helpful, and the platform's security measures are top-notch. I've already claimed a few valuable airdrops, and I'm looking forward to many more!"`}
           />
           <QuestCard
-            question={"How do I know if I'm eligible for an airdrop?"}
+            question={"How is this platform unique?"}
+            answer={`"I was skeptical at first, but Buyeet has proven to be a legit platform for claiming airdrops. The team is responsive and helpful, and the platform's security measures are top-notch. I've already claimed a few valuable airdrops, and I'm looking forward to many more!"`}
+          />
+          <QuestCard
+            question={"Is the platform secure?"}
+            answer={`"I was skeptical at first, but Buyeet has proven to be a legit platform for claiming airdrops. The team is responsive and helpful, and the platform's security measures are top-notch. I've already claimed a few valuable airdrops, and I'm looking forward to many more!"`}
+          />
+          <QuestCard
+            question={"How can I stay updated?"}
             answer={`"I was skeptical at first, but Buyeet has proven to be a legit platform for claiming airdrops. The team is responsive and helpful, and the platform's security measures are top-notch. I've already claimed a few valuable airdrops, and I'm looking forward to many more!"`}
           />
         </div>

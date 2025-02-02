@@ -4,7 +4,7 @@ import { CiStar } from "react-icons/ci";
 
 const TestimonialCard = ({ icon, caption, name, role }) => {
   return (
-    <div className="rounded-xl border-1 h-85 lg:h-100 border-neutral w-full lg:w-full flex justify-center bg-searchBack ">
+    <div className="rounded-xl border-1 h-85 lg:h-100 border-neutral w-full lg:w-full flex justify-center bg-searchBack sm-landscape:w-72 ">
       <div className="flex flex-col  h-full justify-center gap-8 items-center">
         <span className="block text-xs lg:text-base text-center w-10/12 lg:w-11/12 bg">{caption}</span>
         <span className="flex w-11/12 justify-center">
