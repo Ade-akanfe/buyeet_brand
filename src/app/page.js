@@ -7,6 +7,7 @@ import News from "@/components/news/news";
 import Testimonial from "@/components/testimonial/testimonial";
 import WaitList from "@/components/waitlist/waitlist";
 import WhyUs from "@/components/why/why";
+import dynamic from "next/dynamic";
 
 export default function Home() {
   return (
@@ -28,6 +29,8 @@ export default function Home() {
         <WaitList />
       </div>
       <Footer />
+      <div>
+      </div>
     </div>
   );
 }

@@ -109,7 +109,13 @@ body {
       #1a0240 80%,
       #131318 100%1a0240 
     ); */
-  linear-gradient(90deg, #0e0e17 16%, #04062b 30%, #1a0240 50%, #131318 100%);
+      linear-gradient(
+        90deg,
+        #0e0e17 16%,
+        #04062b 30%,
+        #1a0240 50%,
+        #131318 100%
+      );
 }
 
 .gradient-background2 {
@@ -123,6 +129,78 @@ body {
     linear-gradient(90deg, #0e0e17 20%, #04062b 60%, #1a0240 80%, #131318 100%);
 }
 
-.forced{
+.forced {
   color: red !important;
+}
+.circle-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.images-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rolling 5s linear infinite;
+}
+
+.image-wrapper {
+  position: absolute;
+  width: 50px; /* Size of the image */
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes rolling {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0); /* Start at the top */
+  }
+  10% {
+    transform: translateY(0); /* Keep first set of items visible */
+  }
+  100% {
+    transform: translateY(-100%); /* Move completely out of view */
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite; /* Scroll animation duration */
+  animation-timing-function: steps(
+    0,
+    jump-none
+  ); /* Smoothly jumps from last to first */
+  will-change: transform;
 }

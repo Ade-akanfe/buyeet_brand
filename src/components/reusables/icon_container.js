@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 const IconContainer = ({ src, altVal }) => (
-  <div className="h-16 w-16">
+  <span className="h-16 w-16">
     <Image src={src} priority alt={altVal} />
-  </div>
+  </span>
 );
 
 export default IconContainer;
