@@ -17,58 +17,6 @@ import Image from "next/image";
 import Image14 from "@/assets/image14.png";
 
 const HomePage = () => {
-  const arrayResult = [
-    { caption: "Cex.io", icon: Airdrop3 },
-    { icon: Airdrop10, caption: "Notpixel" },
-    { caption: "Blum", icon: Airdrop8 },
-    { icon: Airdrop1, caption: "Tapswap" },
-    { icon: Airdrop5, caption: "W-coin" },
-    { icon: Airdrop2, caption: "Paws" },
-    { icon: Airdrop10, caption: "Notpixel" },
-    { icon: Airdrop4, caption: "Major" },
-    { icon: Airdrop3, caption: "Cex.io" },
-    { icon: Airdrop8, caption: "Blum" },
-    { icon: Airdrop1, caption: "Tapswap" },
-    { icon: Airdrop7, caption: "Sidekick" },
-    { icon: Airdrop9, caption: "Musk Empire" },
-    { icon: Airdrop10, caption: "Notpixel" },
-    { icon: Airdrop4, caption: "Major" },
-    { icon: Airdrop6, caption: "Gomble" },
-    { icon: Airdrop9, caption: "Musk Empire" },
-    { icon: Airdrop2, caption: "Paws" },
-    { icon: Airdrop7, caption: "Sidekick" },
-    { icon: Airdrop5, caption: "W-coin" },
-    { icon: Airdrop2, caption: "Paws" },
-    { icon: Airdrop10, caption: "Notpixel" },
-    { icon: Airdrop4, caption: "Major" },
-    { icon: Airdrop3, caption: "Cex.io" },
-    { icon: Airdrop8, caption: "Blum" },
-    { icon: Airdrop1, caption: "Tapswap" },
-    { icon: Airdrop7, caption: "Sidekick" },
-    { icon: Airdrop9, caption: "Musk Empire" },
-    { icon: Airdrop10, caption: "Notpixel" },
-    { icon: Airdrop5, caption: "W-coin" },
-    { icon: Airdrop2, caption: "Paws" },
-    { icon: Airdrop10, caption: "Notpixel" },
-    { icon: Airdrop4, caption: "Major" },
-    { icon: Airdrop3, caption: "Cex.io" },
-    { icon: Airdrop8, caption: "Blum" },
-    { icon: Airdrop1, caption: "Tapswap" },
-    { icon: Airdrop7, caption: "Sidekick" },
-    { icon: Airdrop9, caption: "Musk Empire" },
-    { icon: Airdrop10, caption: "Notpixel" },
-  ];
-
-  const airdropEl = [
-    { angle: 0, src: Airdrop1 },
-    { angle: 45, src: Airdrop2 },
-    { angle: 90, src: Airdrop3 },
-    { angle: 135, src: Airdrop4 },
-    { angle: 180, src: Airdrop5 },
-    { angle: 225, src: Airdrop6 },
-    { angle: 270, src: Airdrop7 },
-    { angle: 315, src: Airdrop8 },
-  ];
 
   return (
     <div className="w-full h-full lg:h-screen relative overflow-hidden flex items-center flex-col ">
@@ -78,7 +26,7 @@ const HomePage = () => {
           <div className="w-full  flex justify-center flex-col items-center gap-1 lg:gap-4">
             <div className="w-10/12 md:w-80 lg:w-96 2xl:w-full font-bold leading-8 lg:leading-none text-homeColor font-roboto flex flex-col gap-2 md:gap-5">
               <span className="text-3.5xl md:text-4xl lg:text-4.5xl xl:text-5.5xl block ">
-                It's all
+                It&apos;s all
                 <br className="hidden xl:inline-block " />
                 <span className="inline mt-0 xl:inline-block xl:mt-4">
                   &nbsp;possible to
@@ -107,17 +55,6 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* <div className="w-full h-52 overflow-hidden flex lg:w-10/12 2xl:w-full relative z-20 2xl:max-w-7xl min-w-80 justify-center items-center px-4 py-8 gap-4 flex-wrap">
-        <div className="w-full lg:w-full 2xl:w-full animate-scroll">
-          <ul className="flex justify-center items-center px-4 lg:px-0 py-8 gap-4 flex-wrap">
-            {arrayResult.map((el, index) => (
-              <li key={index}>
-                <HomeButton icon={el.icon}>{el.caption}</HomeButton>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div> */}
     </div>
   );
 };
