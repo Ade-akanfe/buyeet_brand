@@ -9,12 +9,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        seconday: "var(--secondary)",
-        tertiary: "var(--tertiary)",
-        neutral: "var(--neutral)",
-        neutral_variant: "var(--neutral_variant)",
-        primary: "var(--primary)",
+        background: "#0c0c1d",
+        seconday: "#5920a7",
+        tertiary: "#fe15ce",
+        neutral: "#42526d",
+        neutral_variant: "#c2c7d0",
+        primary: "#0f0f80",
         border: "#BFC1FF",
         buttonSt: "#BFC1FFB2",
         buttonEnd: "#F9B1DC12",
