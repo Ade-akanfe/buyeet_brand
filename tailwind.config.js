@@ -23,12 +23,16 @@ module.exports = {
         searchBackground: "#8C9199",
         homeColor: "#E1E2E9",
         homesubfont: "#C2C7CF",
+        cardBG: "#BFC1FF33",
       },
       screens: {
         "2xl": "1440px",
         "lg.5": "1175",
         "sm-landscape": {
           raw: `(max-width:700px) and (orientation:landscape)`,
+        },
+        smd: {
+          raw: `(max-width:767px) and (min-width:450px)`,
         },
       },
       fontSize: {
@@ -68,6 +72,8 @@ module.exports = {
         custom: "calc(100%-2rem)",
         "custom-half": "calc((100% - 2rem) / 2)",
         78: "296px",
+        48: "48%",
+        
       },
       height: {
         85: "350px",

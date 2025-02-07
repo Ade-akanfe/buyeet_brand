@@ -204,3 +204,13 @@ body {
   ); /* Smoothly jumps from last to first */
   will-change: transform;
 }
+
+@media (max-width: 1000px) and (min-width: 768px) {
+  .w_70 {
+    width: 65% !important;
+  }
+
+  .w_30 {
+    width: 30% !important;
+  }
+}
