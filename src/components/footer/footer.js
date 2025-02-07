@@ -55,7 +55,7 @@ const Footer = () => {
                 </Link>
               </span>
             </div>
-            <span className="text-sm">© 2024 buyeet</span>
+            <span className="text-sm text-neutral_variant">© 2024 buyeet</span>
           </div>
         </div>
         <div className="w-11/12 md:1/2 lg:w-full grid grid-cols-8 gap-4">

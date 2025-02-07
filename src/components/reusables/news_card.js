@@ -6,10 +6,10 @@ const NewsCard = ({ src, caption, val1, val2 }) => {
       <div className="w-full flex gap-y-5  flex-col">
         <Image className="w-full rounded-xl h-4/6 sm-landscape:h-3/6 " src={src} alt="caption" />
         <div className="flex w-full flex-col h-2/6 gap-6 lg:gap-0 justify-between">
-          <span className="w-6/12 md:w-8/12 lg:w-9/12 text-xs lg:text-sm 2xl:text-base">
+          <span className="w-6/12 text-neutral_variant md:w-8/12 lg:w-9/12 text-xs lg:text-sm 2xl:text-base">
             {caption}
           </span>
-          <span className="flex justify-between text-xs lg:text-sm 2xl:text-base">
+          <span className="flex justify-between text-xs text-neutral_variant lg:text-sm 2xl:text-base">
             <span>{val1}</span>
             <span>{val2}</span>
           </span>

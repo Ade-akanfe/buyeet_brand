@@ -17,10 +17,10 @@ const News = () => {
             </span>
           </div>
           <span className="flex gap-5">
-            <span className="rounded-full shadow-sm shadow-gray-700 p-3 bg-background">
+            <span className="rounded-full shadow-sm text-neutral_variant shadow-gray-700 p-3 bg-background">
               <FaArrowLeft />
             </span>
-            <span className="rounded-full shadow-sm shadow-gray-700 p-3 bg-background">
+            <span className="rounded-full text-neutral_variant shadow-sm shadow-gray-700 p-3 bg-background">
               <FaArrowRight />
             </span>
           </span>
