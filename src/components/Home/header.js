@@ -34,7 +34,7 @@ const Header = () => {
           </div>
           <div className="xl:hidden w-full text-right  flex justify-end items-center">
             <FaBars
-              className=" text-2xl xl:text-3xl cursor-pointer"
+              className="text-neutral_variant text-2xl xl:text-3xl cursor-pointer"
               onClick={() => setOpen((prev) => !prev)}
             />
           </div>
@@ -73,26 +73,25 @@ const Header = () => {
               ? "transform translate-y-0 duration-300"
               : "transform -translate-y-full duration-300"
           }
-
           
           `}
       >
         <div className="h-full w-11/12 flex gap-14 flex-col">
           <span className=" h-auto inline-flex justify-end pt-8">
             <MdOutlineCancel
-              className="text-2xl cursor-pointer"
+              className="text-2xl cursor-pointer text-neutral_variant"
               onClick={() => setOpen((prev) => !prev)}
             />
           </span>
           <div className=" flex justify-start items-center gap-10 flex-col">
             <span className="flex relative rounded-xl h-10 w-full bg-searchBack overflow-hidden justify-around">
-              <CiSearch className="flex w-10 h-full justify-center items-center pl-3 bg-searchBack cursor-pointer" />
+              <CiSearch className="flex text-neutral_variant w-10 h-full justify-center items-center pl-3 bg-searchBack cursor-pointer" />
               <input
-                className="flex input w-full bg-searchBack"
+                className="flex input w-full bg-searchBack text-neutral_variant"
                 placeholder="Search"
               />
               <span className="flex w-10 pr-3 justify-center items-center h-full bg-searchBack">
-                <span className="h-1/2 w-full border-2 border-searchBack rounded-md text-center flex justify-center bg-searchBack items-center text-xs font-extrabold">
+                <span className="h-1/2 w-full border-2 border-searchBack rounded-md text-center flex justify-center bg-searchBack items-center text-xs font-extrabold text-neutral_variant">
                   /
                 </span>
               </span>
@@ -100,13 +99,13 @@ const Header = () => {
           </div>
           <div className="flex flex-col h-3/6 justify-center items-center gap-5">
             <span className="inline-block">
-              <Link href={"#learn"} className="text-sm font-medium" onClick={clicked}>
+              <Link href={"#learn"} className="text-sm text-neutral_variant font-medium" onClick={clicked}>
                 Learn
               </Link>
             </span>
             <span className=" inline-block">
               {" "}
-              <Link href={"#about"} className="text-sm font-medium" onClick={clicked}>
+              <Link href={"#about"} className="text-sm text-neutral_variant font-medium " onClick={clicked}>
                 About Us
               </Link>
             </span>
