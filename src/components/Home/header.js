@@ -67,7 +67,7 @@ const Header = () => {
         </div>
       </div>
       <div
-        className={`absolute h-screen w-full z-30 bg-gray-700 top-0 flex justify-center 
+        className={`absolute h-full w-full z-30 bg-gray-700 top-0 flex justify-center 
           ${
             open
               ? "transform translate-y-0 duration-300"
