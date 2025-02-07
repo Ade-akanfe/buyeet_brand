@@ -5,8 +5,8 @@ const Questions = () => {
     <div className="w-full relative z-20 flex flex-col justify-center items-center py-10">
       <div className="w-11/12 flex flex-col gap-8 max-w-5xl">
         <div className="w-full flex flex-col gap-1 lg:gap-4">
-          <span className="font-bold text-4xl lg:text-4.5xl 2xl:text-5.5xl">Frequently asked questions</span>
-          <span className="text-xs lg:text-sm">
+          <span className="font-bold text-4xl lg:text-4.5xl 2xl:text-5.5xl text-neutral_variant">Frequently asked questions</span>
+          <span className="text-xs lg:text-sm text-neutral_variant">
             Here are some common questions and answers about our airdrop
             platform
           </span>

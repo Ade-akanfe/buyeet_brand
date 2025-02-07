@@ -18,10 +18,10 @@ const Testimonial = () => {
           </div>
           <span className="flex gap-5">
             <span className="rounded-full shadow-sm shadow-gray-700 p-3 bg-background">
-              <FaArrowLeft />
+              <FaArrowLeft className="text-neutral_variant"/>
             </span>
             <span className="rounded-full shadow-sm shadow-gray-700 p-3 bg-background">
-              <FaArrowRight />
+              <FaArrowRight className="text-neutral_variant"/>
             </span>
           </span>
         </div>

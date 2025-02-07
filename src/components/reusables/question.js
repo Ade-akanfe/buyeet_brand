@@ -10,9 +10,11 @@ const QuestCard = ({ question, answer }) => {
         ${open ? "h-50" : "h-auto"} border-b-2 border-gray-700 gap-4`}
     >
       <div className="h-full flex gap-3 justify-between w-full items-center ">
-        <span className="text-sm font-medium lg:text-base 2xl:text-1.5xl">{question}</span>
+        <span className="text-sm text-neutral_variant font-medium lg:text-base 2xl:text-1.5xl">
+          {question}
+        </span>
         <span
-          className="text-sm font-medium lg:text-base 2xl:text-1.5xl cursor-pointer"
+          className="text-sm font-medium lg:text-base text-neutral_variant 2xl:text-1.5xl cursor-pointer"
           onClick={() => setOpen((prev) => !prev)}
         >
           {open ? "-" : "+"}
@@ -20,7 +22,9 @@ const QuestCard = ({ question, answer }) => {
       </div>
       <div
         className={`text-xs lg:text-sm 2xl:text-base ${
-          open ? "block" : "hidden transform -translate-x-full duration-700"
+          open
+            ? "block"
+            : "hidden transform -translate-x-full duration-700 text-neutral_variant"
         }"`}
       >
         {answer}
