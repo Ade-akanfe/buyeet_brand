@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: false,
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -73,7 +74,6 @@ module.exports = {
         "custom-half": "calc((100% - 2rem) / 2)",
         78: "296px",
         48: "48%",
-        
       },
       height: {
         85: "350px",

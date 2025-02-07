@@ -24,7 +24,7 @@ const Form = () => {
       <div className="flex flex-col gap-1">
         <label className="text-sm font-bold">Full Name</label>
         <input
-          className="flex border-1 border-neutral text-sm outline-none w-full h-14 2xl:h-12 rounded-full focus:border-none  focus:outline-none text-left px-4 bg-searchBack"
+          className="flex border-1 border-neutral text-sm outline-none w-full h-14 2xl:h-12 rounded-full focus:border-none  focus:outline-none text-left p_10 bg-searchBack"
           placeholder="Enter Full Name"
           name="name"
           required
@@ -36,7 +36,7 @@ const Form = () => {
           required
           type="email"
           name="email"
-          className="flex border-1 border-neutral text-sm outline-none w-full h-14 2xl:h-12 rounded-full text-left px-4 bg-searchBack focus:border-none  focus:outline-none"
+          className="flex border-1 border-neutral text-sm outline-none w-full h-14 2xl:h-12 rounded-full text-start p_10 bg-searchBack focus:border-none focus:outline-none"
           placeholder="Enter Email"
         />
       </div>

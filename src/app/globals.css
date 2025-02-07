@@ -214,3 +214,7 @@ body {
     width: 30% !important;
   }
 }
+
+.p_10 {
+  padding-left: 15px;
+}
