@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <>
       <div className="bg-searchBack relative z-20 flex w-full h-auto py-2 lg:py-5 justify-center border-solid border-b-2 border_color">
-        <div className="w-11/12 md:w-10/12 lg:w-11/12 max-w-7xl flex justify-between ">
+        <div className="w-11/12 md:w-10/12 lg:w-11/12 max-w-7xl flex justify-between">
           <div className="relative lg:h-12 flex w-full lg:w-1/6 justify-start lg:justify-start  2xl:justify-center items-center">
             <div className="relative w-10 h-10 lg:w-16 lg:h-16">
               <Image
