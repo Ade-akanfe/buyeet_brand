@@ -67,16 +67,16 @@ const Header = () => {
         </div>
       </div>
       <div
-        className={`absolute h-full w-full z-30 bg-gray-700 top-0 flex justify-center 
+        className={`absolute h-full w-full z-30 bg-gray-700 top-0  flex justify-center 
           ${
             open
-              ? "transform translate-y-0 duration-300"
-              : "transform -translate-y-full duration-300"
+              ? "transform translate-y-0 duration-300 sm-landscape:top-0"
+              : "transform -translate-y-full duration-300 sm-landscape:-top-20"
           }
           
           `}
       >
-        <div className="h-full w-11/12 flex gap-14 flex-col">
+        <div className="h-full w-11/12 flex gap-14 flex-col sm-landscape:gap-10">
           <span className=" h-auto inline-flex justify-end pt-8">
             <MdOutlineCancel
               className="text-2xl cursor-pointer text-neutral_variant"
@@ -99,13 +99,21 @@ const Header = () => {
           </div>
           <div className="flex flex-col h-3/6 justify-center items-center gap-5">
             <span className="inline-block">
-              <Link href={"#learn"} className="text-sm text-neutral_variant font-medium" onClick={clicked}>
+              <Link
+                href={"#learn"}
+                className="text-sm text-neutral_variant font-medium"
+                onClick={clicked}
+              >
                 Learn
               </Link>
             </span>
             <span className=" inline-block">
               {" "}
-              <Link href={"#about"} className="text-sm text-neutral_variant font-medium " onClick={clicked}>
+              <Link
+                href={"#about"}
+                className="text-sm text-neutral_variant font-medium "
+                onClick={clicked}
+              >
                 About Us
               </Link>
             </span>

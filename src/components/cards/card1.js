@@ -8,7 +8,7 @@ const Card = ({ icon, title, caption, long, small, wide }) => {
       }
       ${small ? "w-full  w_30" : " w-full md:w-48"}
       lg:h-auto
-      sm-landscape:w-32  lg:max-w-6xl lg:w-88 rounded-xl shadow-sm shadow-neutral_variant bg-searchBack justify-center items-center flex-col pb-5 gap-5`}
+      sm-landscape:w-64  lg:max-w-6xl lg:w-88 rounded-xl shadow-sm shadow-neutral_variant bg-searchBack justify-center items-center flex-col pb-5 gap-5`}
     >
       <div className="w-5/6 h-44 flex items-center">
         <Image src={icon} alt={title} height={100} width={120} />

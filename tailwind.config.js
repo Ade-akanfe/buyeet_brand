@@ -30,7 +30,7 @@ module.exports = {
         "2xl": "1440px",
         "lg.5": "1175",
         "sm-landscape": {
-          raw: `(max-width:700px) and (orientation:landscape)`,
+          raw: `(max-width:800px) and (orientation:landscape)`,
         },
         smd: {
           raw: `(max-width:767px) and (min-width:450px)`,

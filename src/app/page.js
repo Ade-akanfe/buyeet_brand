@@ -20,7 +20,7 @@ export default function Home() {
         <WhyUs />
       </div>
       {/* <About /> */}
-      <News />
+      {/* <News /> */}
       <Testimonial />
       <div id="about">
         <Questions />
