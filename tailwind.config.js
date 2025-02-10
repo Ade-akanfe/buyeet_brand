@@ -25,6 +25,7 @@ module.exports = {
         homeColor: "#E1E2E9",
         homesubfont: "#C2C7CF",
         cardBG: "#BFC1FF33",
+        view: "#501E41",
       },
       screens: {
         "2xl": "1440px",

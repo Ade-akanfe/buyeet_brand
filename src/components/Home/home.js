@@ -4,8 +4,19 @@ import JoinWaitList from "../reusables/join";
 import Header from "./header";
 import Image from "next/image";
 import Image14 from "@/assets/image14.png";
+import { useEffect, useState } from "react";
 
 const HomePage = () => {
+  const [stateVal, setStateVal] = useState(false);
+
+  useEffect(() => {
+    console.log(stateVal);
+    const interval = setInterval(() => {
+      setStateVal((prev) => !prev);
+    }, 3000);
+    return () => clearInterval(interval);
+  });
+
   return (
     <div className="w-full h-full lg:h-screen relative overflow-hidden flex items-center flex-col ">
       <Header />
@@ -17,13 +28,19 @@ const HomePage = () => {
                 It&apos;s all
                 <br className="hidden sm-landscape:inline-block xl:inline-block " />
                 <span className="inline mt-0 xl:inline-block xl:mt-4">
-                  <span className="inline-block sm-landscape:hidden lg:hidden">&nbsp;</span>possible
-                  to
+                  <span className="inline-block sm-landscape:hidden lg:hidden">
+                    &nbsp;
+                  </span>
+                  possible to
                 </span>
               </span>
               {/* <br className="block lg:hidden lg.5:block" /> */}
               <span className="block font-bold text-5xl lg:text-5.5xl xl:text-6xl">
-                <span className="text-buttonSt">Buy</span>
+                {stateVal ? (
+                  <span className="text-buttonSt">Buy</span>
+                ) : (
+                  <span className="text-tertiary">Sell</span>
+                )}
                 <span>eet</span>
                 <span className=" ml-1 h-3 w-3 bg-white rounded-full inline-block"></span>
               </span>
