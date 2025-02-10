@@ -52,13 +52,19 @@ const Header = () => {
               </span>
             </span>
             <span className="inline-block">
-              <Link href={"#learn"} className="text-sm font-medium">
+              <Link
+                href={"#learn"}
+                className="text-sm font-medium text-neutral_variant"
+              >
                 Learn
               </Link>
             </span>
             <span className=" inline-block">
               {" "}
-              <Link href={"#about"} className="text-sm font-medium">
+              <Link
+                href={"#about"}
+                className="text-sm font-medium text-neutral_variant"
+              >
                 About Us
               </Link>
             </span>
